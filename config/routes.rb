@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  root 'pages#home'
+  resources :articles
 
+  root 'pages#home'
   get 'about', to: 'pages#about'
 end
+
+# rails routes --expanded   -> show routes like table
