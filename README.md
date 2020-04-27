@@ -22,3 +22,5 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+* REST - REpresentational State Transfer - mapping HTTP verbs (get, post, put/patch, delete) to CRUD operations
