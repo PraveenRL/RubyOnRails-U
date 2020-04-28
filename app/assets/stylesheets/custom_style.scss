@@ -1,0 +1,17 @@
+@import 'bootstrap/dist/css/bootstrap';
+
+.jumbotron{
+    background-image: asset-url('bg-1.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 425px;
+}
+
+.sticky-footer{
+    flex-shrink: none;
+}
+
+.page-content{
+    background-color: lightgrey;
+}
