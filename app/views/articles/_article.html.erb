@@ -1,5 +1,5 @@
 <div class="container">
-<% @articles.each do |article| %>
+<% obj.each do |article| %>
 <div class="row justify-content-md-center">
     <div class="col-8 mt-4">
         <div class="card text-center shadow rounded">
@@ -25,12 +25,18 @@
                             data: { confirm: "Are you sure?" }, class: "btn btn-outline-danger" %>
                 <% end %>
             </div>
+
+            <% if article.categories.any? %>
+                <p> Categories: <%= render article.categories %> </p>
+            <% end %>
+
             <div class="card-footer text-muted">
                 <small>
                     Created <%= time_ago_in_words(article.created_at) %> ago,
                     Edited <%= time_ago_in_words(article.updated_at) %> ago
                 </small>
             </div>
+            
         </div>
     </div>
 </div>
