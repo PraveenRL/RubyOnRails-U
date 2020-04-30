@@ -8,4 +8,5 @@ module ApplicationHelper
         image_tag(gravatar_url, alt: user.username, class: "rounded mx-auto d-block shadow")
     end
 
+
 end
